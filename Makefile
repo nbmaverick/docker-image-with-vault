@@ -1,5 +1,5 @@
 b:
-	docker  build –t us-central1-docker.pkg.dev/terraform-project-nb17/tools/tools:0.0.3 .
+	docker image build –t us-central1-docker.pkg.dev/terraform-project-nb17/tools/tools:0.0.3 .
 	gcloud auth configure-docker us-central1-docker.pkg.dev 
 	docker  push   us-central1-docker.pkg.dev/terraform-project-nb17/tools/tools:0.0.3
 	
